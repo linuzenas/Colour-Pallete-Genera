@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Palette Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Colour Palette Generator</h1>
+        <div class="color-controls">
+            <div class="color-input-section">
+                <div class="color-input">
+                    <label for="base-color">Base Colour</label>
+                    <input type="color" id="base-color" value="#ff0000">
+                </div>
+                <div class="color-input">
+                    <label for="saturation">Saturation</label>
+                    <input type="range" id="saturation" min="0" max="100" value="100">
+                </div>
+                <div class="color-input">
+                    <label for="brightness">Brightness</label>
+                    <input type="range" id="brightness" min="0" max="100" value="100">
+                </div>
+                <div class="palette-schemes">
+                    <input type="radio" id="complementary" name="scheme" value="Complementary" class="scheme-radio" checked>
+                    <label for="complementary" class="scheme-label">Complementary</label>
+
+                    <input type="radio" id="analogous" name="scheme" value="Analogous" class="scheme-radio">
+                    <label for="analogous" class="scheme-label">Analogous</label>
+
+                    <input type="radio" id="triadic" name="scheme" value="Triadic" class="scheme-radio">
+                    <label for="triadic" class="scheme-label">Triadic</label>
+
+                    <input type="radio" id="monochromatic" name="scheme" value="Monochromatic" class="scheme-radio">
+                    <label for="monochromatic" class="scheme-label">Monochromatic</label>
+                </div>
+            </div>
+            <div>
+                <div id="color-theory-info">
+                    <h3>Colour Theory Explanation</h3>
+                    <p id="theory-text">Select a colour harmony to learn more about color relationships.</p>
+                </div>
+            </div>
+        </div>
+        <div class="action-buttons">
+            <button id="generate-btn" class="btn btn-generate">Generate Palette</button>
+            <button id="copy-btn" class="btn btn-copy">Copy All Colours</button>
+            <button id="export-btn" class="btn btn-export">Export Palette</button>
+        </div>
+        <div id="palette-display" class="mt-4"></div>
+    </div>
+    <script src="color.js"></script>
+</body>
+</html>

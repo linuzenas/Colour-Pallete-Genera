@@ -36,7 +36,7 @@ A dynamic web application to generate, customize, and explore color palettes. Us
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Colour-Palette-Generator.git
+   git clone https://github.com/yourusername/Colour-Pallete-Generator.git
    ```
 2. Navigate to the project directory:
    ```bash
